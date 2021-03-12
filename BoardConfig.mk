@@ -11,3 +11,6 @@ include device/xiaomi/sm8650-common/BoardConfigCommon.mk
 include vendor/xiaomi/shennong/BoardConfigVendor.mk
 
 DEVICE_PATH := device/xiaomi/shennong
+
+# Screen density
+TARGET_SCREEN_DENSITY := 560
