@@ -10,6 +10,10 @@ $(call inherit-product, device/xiaomi/sm8650-common/common.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/shennong/shennong-vendor.mk)
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
